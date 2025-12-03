@@ -60,7 +60,7 @@ variable "deletion_protection" {
 variable "pg_version" {
   description = "PostgreSQL version"
   type        = string
-  default     = "15"
+  default     = "16"
   validation {
     condition     = contains(["14", "14-1c", "15", "15-1c", "16", "16-1c", "17", "17-1c", "18"], var.pg_version)
     error_message = "Allowed PostgreSQL versions are 14, 14-1c, 15, 15-1c, 16, 16-1c, 17, 17-1c, 18."
